@@ -1,0 +1,64 @@
+:root {
+    --global-padding: 2rem;
+}
+
+:root[data-theme="light"] {
+    --primary-color: #134D8A;
+    --strong-color: #436DAE;
+    --accent-color: #F2F9FF;
+    color-scheme: light;
+}
+
+:root[data-theme="dark"] {
+    --primary-color: #F2F9FF;
+    --strong-color: #436DAE;
+    --accent-color: #134D8A;
+    color-scheme: dark;
+}
+
+body {
+    font-family: Arial, Helvetica, sans-serif;
+    margin: 0;
+}
+
+a {
+    color: var(--strong-color);
+}
+
+.header {
+    color: var(--primary-color);
+    background-color: var(--accent-color);
+    padding: 0 var(--global-padding);
+}
+
+.footer {
+    color: var(--primary-color);
+    background-color: var(--accent-color);
+    padding: 1rem var(--global-padding);
+}
+
+.footer .footer-text {
+    text-align: center;
+    font-size: 12px;
+    font-style: italic;
+}
+
+.header a {
+    color: inherit;
+    text-decoration: none;
+}
+
+.container {
+    min-height: 100vh;
+    max-width: 900px;
+    margin: 0 auto;
+    display: flex;
+    flex-direction: column;
+}
+
+.icon {
+    width: 1em;
+    height: 1em;
+    vertical-align: -0.125em;
+    fill: currentColor;
+}
